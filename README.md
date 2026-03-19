@@ -1,80 +1,58 @@
-# Sistema de Login + Autenticacao com JWT
+# 🔐 Sistema de Login e Autenticação com JWT
 
-Projeto full-stack com:
+Aplicação full stack com autenticação segura utilizando JWT, permitindo cadastro, login e acesso a rotas protegidas.
 
-- Frontend em React
-- Backend em Go
-- Banco MySQL
-- Arquitetura cliente-servidor
-- Login, cadastro, JWT, rotas protegidas e perfil do usuario
+---
 
-## Estrutura
+## 🎥 Demonstração
 
-```text
-backend/   API Go + JWT + MySQL
-frontend/  Interface React servida pelo Go
-```
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=1GZxRmRjBKo">
+    <img src="https://img.youtube.com/vi/1GZxRmRjBKo/maxresdefault.jpg" width="700px"/>
+  </a>
+</p>
 
-## Banco
+---
 
-Crie o banco e a tabela com:
+## 🚀 Funcionalidades
 
-```sql
-SOURCE backend/schema.sql;
-```
+- 👤 Cadastro de usuário  
+- 🔐 Login com autenticação JWT  
+- 🧾 Perfil do usuário  
+- 🔒 Rotas protegidas  
+- 🖥️ Front-end integrado  
 
-## Variaveis de ambiente
+---
 
-Use [backend/.env.example](backend/.env.example) como referencia:
+## 🛠️ Tecnologias
 
-```bash
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_NAME=auth_jwt
-DB_USER=root
-DB_PASS=
-APP_PORT=8080
-JWT_SECRET=troque-esta-chave-em-producao
-JWT_TTL=3600
-```
+**Front-end:**
+- React
 
-## Como rodar
+**Back-end:**
+- Go (Golang)
 
-1. Instale as dependencias Go:
+**Banco de Dados:**
+- MySQL
+
+**Segurança:**
+- JWT (JSON Web Token)
+- Bcrypt (hash de senha)
+
+---
+
+## 🧠 Arquitetura
+
+- Cliente-Servidor  
+- API REST  
+- Arquitetura em Camadas  
+
+---
+
+## ⚙️ Como executar
+
+### 🔧 Backend
 
 ```bash
 go mod tidy
-```
-
-2. Inicie o servidor:
-
-```bash
 go run ./backend
-```
-
-3. Abra no navegador:
-
-```text
-http://localhost:8080
-```
-
-Tambem funciona em:
-
-```text
-http://localhost:8080/frontend/index.html
-```
-
-## Endpoints
-
-- `GET /api/health`
-- `POST /api/register`
-- `POST /api/login`
-- `GET /api/profile`
-
-## Seguranca aplicada
-
-- Senhas com `bcrypt`
-- JWT assinado com HS256
-- Expiracao do token
-- Header `Authorization: Bearer <token>`
-- Protecao de rota no backend e no frontend
