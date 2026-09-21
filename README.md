@@ -29,8 +29,8 @@ Aplicação full stack com cadastro, login e proteção de rotas usando tokens J
 ### Back-end
 
 ```bash
-git clone https://github.com/yubr02/SLAUTJWT.git
-cd SLAUTJWT
+git clone https://github.com/yubr02/auth-jwt-fullstack.git
+cd auth-jwt-fullstack
 go mod tidy
 go run ./backend
 ```
