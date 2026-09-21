@@ -1,58 +1,55 @@
-# 🔐 Sistema de Login e Autenticação com JWT
+# Autenticação Full Stack com JWT
 
-Aplicação full stack com autenticação segura utilizando JWT, permitindo cadastro, login e acesso a rotas protegidas.
+Aplicação full stack com cadastro, login e proteção de rotas usando tokens JWT.
 
----
+## Demonstração
 
-## 🎥 Demonstração
+[![Assistir à demonstração](https://img.youtube.com/vi/1GZxRmRjBKo/maxresdefault.jpg)](https://www.youtube.com/watch?v=1GZxRmRjBKo)
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=1GZxRmRjBKo">
-    <img src="https://img.youtube.com/vi/1GZxRmRjBKo/maxresdefault.jpg" width="700px"/>
-  </a>
-</p>
+## Funcionalidades
 
----
+- Cadastro de usuários
+- Login com geração de token JWT
+- Senhas protegidas com bcrypt
+- Perfil autenticado
+- Rotas privadas
+- Integração entre front-end e API
 
-## 🚀 Funcionalidades
+## Tecnologias
 
-- 👤 Cadastro de usuário  
-- 🔐 Login com autenticação JWT  
-- 🧾 Perfil do usuário  
-- 🔒 Rotas protegidas  
-- 🖥️ Front-end integrado  
+| Camada | Tecnologias |
+| --- | --- |
+| Front-end | React |
+| Back-end | Go |
+| Banco de dados | MySQL |
+| Segurança | JWT, bcrypt |
 
----
+## Como executar
 
-## 🛠️ Tecnologias
-
-**Front-end:**
-- React
-
-**Back-end:**
-- Go (Golang)
-
-**Banco de Dados:**
-- MySQL
-
-**Segurança:**
-- JWT (JSON Web Token)
-- Bcrypt (hash de senha)
-
----
-
-## 🧠 Arquitetura
-
-- Cliente-Servidor  
-- API REST  
-- Arquitetura em Camadas  
-
----
-
-## ⚙️ Como executar
-
-### 🔧 Backend
+### Back-end
 
 ```bash
+git clone https://github.com/yubr02/SLAUTJWT.git
+cd SLAUTJWT
 go mod tidy
 go run ./backend
+```
+
+Configure as variáveis de ambiente e a conexão com o MySQL antes de iniciar.
+
+### Front-end
+
+Entre na pasta do front-end indicada no projeto e execute:
+
+```bash
+npm install
+npm run dev
+```
+
+## Objetivo técnico
+
+Este projeto demonstra autenticação stateless, separação entre cliente e servidor, hash de senhas e autorização de rotas — componentes reutilizáveis em sistemas maiores.
+
+## Autor
+
+Desenvolvido por [Matheus Santos Carvalho](https://github.com/yubr02).
